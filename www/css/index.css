@@ -46,11 +46,4 @@ span{
 	margin: .8em 1% !important;
 	text-overflow: ellipsis;
 }
-@media screen and (orientation: portrait) {
- @-ms-viewport {
-    width: 320px;
-    user-zoom: fixed;
-    max-zoom: 1;
-    min-zoom: 1;
- }
-}
+
