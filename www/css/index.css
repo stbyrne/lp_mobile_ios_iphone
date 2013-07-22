@@ -1,13 +1,11 @@
-#mainTitle{
+/*#mainTitle{
 	text-align: left;
     font-size: .8em;
     max-width: 100%;
 	min-height: 2.5em;
 	padding:0;
     margin:0;
-    
-	
-}
+}*/
 #logo{
 	float:right !important;
 	padding-right: .5em !important;
@@ -38,9 +36,9 @@ span{
 	padding: 0 .4em !important;
 }
 
-.ui-header.ui-bar-a .ui-title{
+.ui-title{
 	text-align: left;
-    max-width: 65%;
+    max-width: 95%;
 	min-height: 2.5em;
 	font-size: .6em;
     padding-right: .2em;

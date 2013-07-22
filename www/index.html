@@ -11,14 +11,17 @@
 	<script type="text/javascript" charset="utf-8" src="phonegap.js" ></script>
 	<script src="js/jq.js"></script>
 	<script>
+        $(document).on('pagebeforeshow', function () {
+            $.mobile.activePage.find(".ui-header a.ui-btn-left").addClass("ui-btn-icon-notext");
+            $.mobile.activePage.find(".ui-header a.ui-btn-left").addClass("ui-icon-nodisc ui-icon-alt");
+            $.mobile.activePage.find(".ui-header a.ui-btn-left").removeClass("ui-btn-icon-left");
+        });
 		$(document).bind('mobileinit', function(){
 			$.mobile.defaultPageTransition="fade";
-			$.mobile.page.prototype.options.backBtnText = "back";
-			$.mobile.page.prototype.options.backBtnTheme = "a";
-			 $.fn.buttonMarkup.defaults.corners=false;
 		});
 	</script>
 	<script src="js/jquery.mobile-1.3.1.min.js"></script>
+    
 	<script src="js/index.js"></script>
     <script type="text/javascript">
 	
@@ -44,13 +47,14 @@
 <body onload="onBodyLoad()" >
 	<div class="app" id="home" data-role="page">
 	
-		<div class="title" data-role="header" data-position="fixed" >
-            <h1 id="mainTitle">Skillpad LP Mobile<img id="logo" src="images/logo.png"/></h1>
-            
+		<div class="title" data-role="header" data-position="fixed" data-theme="c">
+            <div>
+                <h3 id="mainTitle" class="pull-left">Skillpad LP Mobile<img id="logo" src="images/logo.png"/></h1>
+            </div>
 		</div>
 			
 		<div data-role="content">
-			<ul data-role="listview" data-theme="c">
+			<ul data-role="listview" data-theme="c" class="ui-icon-alt">
 				<li id="Screen_01" class="lesson">
 					<a href="#screenView1">
 						<img src="images/screen1.png">
@@ -104,9 +108,9 @@
 	
 	<div id="log" data-role="page" data-add-back-btn="true" data-corners="false"><!--Login page-->
 	
-		<div data-role="header" >
+		<div data-role="header" data-theme="c">
 			<h1>Login<br>Enter your password and click Submit.</h1>
-			<a href="index.html" data-role="button" class="ui-btn-right" data-corners="true" data-theme="b" data-icon="home" data-iconpos="notext">Home</a>
+			<a href="index.html" data-role="button" class="ui-icon-nodisc ui-btn-right ui-icon-alt" data-corners="true" data-theme="c" data-icon="home" data-iconpos="notext">Home</a>
 		</div>
 		<div data-role="content">
 		<div data-role="controlgroup" data-corners="false">
@@ -129,10 +133,10 @@
 	
 	<div id="screenView1" data-role="page"  data-add-back-btn="true"><!--Screen 1 page-->
 	
-		<div data-role="header" >
+		<div data-role="header" data-theme="c">
 			<!--<a id="back" href="#" data-role="button" data-icon="back" data-corners="false">Back</a>-->
 			<h1>Screen 1:<br>Why you should take this module</h1>
-            <a href="index.html" data-role="button" class="ui-btn-right" data-corners="true" data-theme="b" data-icon="home" data-iconpos="notext">Home</a>
+            <a href="index.html" data-role="button" class="ui-icon-nodisc ui-btn-right ui-icon-alt" data-corners="true" data-theme="c" data-icon="home" data-iconpos="notext">Home</a>
 		</div>
 		
 		<div data-role="content">
@@ -154,10 +158,10 @@
 <!-------------------------------------------------------------------------------------------------------------------->
 	<div id="screenView2" data-role="page" data-add-back-btn="true"><!--Screen 2 page-->
 	
-		<div data-role="header" >
+		<div data-role="header" data-theme="c">
 		
 			<h1>Screen 2:<br>The location and function of the face seals</h1>
-            <a href="index.html" data-role="button" class="ui-btn-right" data-corners="true" data-theme="b" data-icon="home" data-iconpos="notext">Home</a>
+            <a href="index.html" data-role="button" class="ui-icon-nodisc ui-btn-right ui-icon-alt" data-corners="true" data-theme="c" data-icon="home" data-iconpos="notext">Home</a>
 		</div>
 		<div data-role="content">
 			<video id="myMovie02" controls width="100%" height="100%" poster="icon.png">
@@ -179,9 +183,9 @@
 
 	<div id="screenView3" data-role="page" data-add-back-btn="true"><!--Screen 3 page-->
 	
-		<div data-role="header" >
+		<div data-role="header" data-theme="c">
 			<h1>Screen 3:<br>Components of the seal assemblies</h1>
-            <a href="index.html" data-role="button" class="ui-btn-right" data-corners="true" data-theme="b" data-icon="home" data-iconpos="notext">Home</a>
+            <a href="index.html" data-role="button" class="ui-icon-nodisc ui-btn-right ui-icon-alt" data-corners="true" data-theme="c" data-icon="home" data-iconpos="notext">Home</a>
 		</div>
 		<div data-role="content">
 			<video id="myMovie03" controls width="100%" height="100%" poster="icon.png">
@@ -203,9 +207,9 @@
 
 	<div id="screenView4" data-role="page" data-add-back-btn="true"><!--Screen 4 page-->
 	
-		<div data-role="header" >
+		<div data-role="header" data-theme="c">
 			<h1>Screen 4:<br>Demounting of the Seal Connector Assemblies</h1>
-            <a href="index.html" data-role="button" class="ui-btn-right" data-corners="true" data-theme="b" data-icon="home" data-iconpos="notext">Home</a>
+            <a href="index.html" data-role="button" class="ui-icon-nodisc ui-btn-right ui-icon-alt" data-corners="true" data-theme="c" data-icon="home" data-iconpos="notext">Home</a>
 		</div>
 		<div data-role="content">
 			<video id="myMovie04" controls width="100%" height="100%" poster="icon.png">
@@ -227,9 +231,9 @@
 
 	<div id="screenView5" data-role="page" data-add-back-btn="true"><!--Screen 5 page-->
 	
-		<div data-role="header" >
+		<div data-role="header" data-theme="c">
 			<h1>Screen 5:<br>Dissassembly</h1>
-            <a href="index.html" data-role="button" class="ui-btn-right" data-corners="true" data-theme="b" data-icon="home" data-iconpos="notext">Home</a>
+            <a href="index.html" data-role="button" class="ui-icon-nodisc ui-btn-right ui-icon-alt" data-corners="true" data-theme="c" data-icon="home" data-iconpos="notext">Home</a>
 		</div>
 		<div data-role="content">
 			<video id="myMovie05" controls width="100%" height="100%" poster="icon.png">
@@ -251,9 +255,9 @@
 
 	<div id="menu" data-role="page" data-add-back-btn="true"><!--Menu page-->
 	
-		<div data-role="header" >
+		<div data-role="header" data-theme="c">
 			<h1>Menu:<br>A list of screens in this module</h1>
-            <a href="index.html" data-role="button" class="ui-btn-right" data-corners="true" data-theme="b" data-icon="home" data-iconpos="notext">Home</a>
+            <a href="index.html" data-role="button" class="ui-icon-nodisc ui-btn-right ui-icon-alt" data-corners="true" data-theme="c" data-icon="home" data-iconpos="notext">Home</a>
 		</div>
 		
 		<div data-role="content">
