@@ -1,11 +1,7 @@
-/*#mainTitle{
-	text-align: left;
-    font-size: .8em;
-    max-width: 100%;
-	min-height: 2.5em;
-	padding:0;
-    margin:0;
-}*/
+#mainTitle{
+    padding-left: .2em;   
+}
+
 #logo{
 	float:right !important;
 	padding-right: .5em !important;
@@ -30,6 +26,10 @@ span{
 }
 .footer{
 	position:fixed;
+    zoom: 1.5;
+}
+.ui-block-a{
+    height: 2em;   
 }
 .ui-input-text.ui-body-c{
 	margin: .5em 0 !important;
@@ -37,13 +37,15 @@ span{
 }
 
 .ui-title{
-	text-align: left;
-    max-width: 95%;
+	text-align: center;
 	min-height: 2.5em;
 	font-size: .6em;
     padding-right: .2em;
 	padding-left: 8em;
 	margin: .8em 1% !important;
 	text-overflow: ellipsis;
+}
+#logButton, #menuButton{
+    zoom: 1;   
 }
 
