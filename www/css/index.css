@@ -24,10 +24,7 @@ span{
 .lesson .ui-btn-text .ui-li-desc {
 	font-size:8px;
 }
-.footer{
-	position:fixed;
-    zoom: 1.5;
-}
+
 .ui-block-a{
     height: 2em;   
 }
@@ -49,3 +46,21 @@ span{
     zoom: 1;   
 }
 
+<!-------------------------------- Windows Phone -------------------------------->
+/*.ui-content{
+    margin-top: 4em; 
+    margin-bottom: 3em;
+}
+.ui-header.ui-bar-a, .ui-header.ui-bar-c{
+    position:fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    
+}
+.ui-footer.ui-bar-a{
+	position:fixed;
+    bottom: 0;
+    width: 100%;
+   
+}*/
